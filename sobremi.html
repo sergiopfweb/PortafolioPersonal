@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mi</title>
+    <link rel="stylesheet" href="css/sobremi.css">
+    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    
+</head>
+<body>
+    <header class="hero">
+        <div class="cabecera">
+            <a href="index.html"><img loading="lazy" class="logo" src="assets/logo3.png" alt="Sergio Pérez Fernández Desarrollo Web"></a>
+            <nav class="nav">
+                <a href="index.html" class="nav__items">Inicio</a>
+                <a href="contacto.php" class="nav__items">Contáctame Ahora</a>
+                <a href="sobremi.html" class="nav__items nav__items--cta">Sobre mi</a> 
+                <a href="#" class="nav__items">Proyectos</a>
+            </nav>
+        </div>
+    </header>
+    <h3>Sobre Mi</h3><br>
+    <span class="flecha">
+        <a class="fas fa-arrow-alt-circle-down flecha"></a>
+    </span>
+        
+    <h2 class="text">Sobre Mi</h2>
+    <section>
+        <h2 class="innerText">Sobre Mi</h2>
+    </section>
+    <div class="container">
+        <h2>Hola soy Sergio</h2>
+        <p>
+            Me llamo Sergio Pérez Fernández, vivo en Albacete, España, y estudié el módulo de grado superior de Desarrollado Aplicaciones Web.<br>
+        </p>
+        <p>
+            Tras terminar de estudiar, he seguido formándome en distintas ramas informáticas como "Seguridad informática", cursos de programación y ERP Dynamics 365 Business Central (antiguo Navision de Microsoft). <br>
+        </p>
+        <p>
+            Me dedico a crear proyectos adaptandome a las necesidades de los clientes y empresas.<br>
+            Durante mi trayectoria no he dejado de adaptarme a los cambios y a las nuevas tecnologías que me he ido encontrando por el camino para poder realizar los proyectos de los clientes.
+        </p>
+        <p>
+            ¿Tienes en mente un proyecto web, modificar tu sitio web, una nueva idea de negocio o darte a conocer?<br>
+            Contacta conmigo y le daré forma a tu idea para plasmarla y hacerla realidad.
+        </p>
+        <p>
+            Este es tu momento para pasar a la acción y hacer tu negocio online con confianza y seguridad.
+        </p>
+    </div>
+    <div class="pie">
+        <p>Sergio Pérez Fernández © 2021</p>
+    </div>
+    <script>
+        let section = document.querySelector('section');
+        let text = document.querySelector('.text');
+        let innerText = document.querySelector('.innerText');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            section.style.clipPath = "circle("+ value +"px at center center)";
+            text.style.left = 100 - value / 5 + '%';
+            innerText.style.left = 100 - value / 5 + '%';
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/c39e10204c.js" crossorigin="anonymous"></script>
+</body>
+</html>
